@@ -8,7 +8,7 @@ export default function Index () {
         <View style={styles.container}>
             <Image source={logo} style={{ width: '100%', height: '15%'}}/>
             <Text>style:{stryles.paragraph}
-                Exemplo 2
+                Exemploo 2
             </Text>
         </View>
     );
