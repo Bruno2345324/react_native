@@ -5,7 +5,9 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         backgroundColor: '#E3F2FD',
-        padding: 8,
+        padding: 10,
+        borderColor: '#2474ff',
+        borderWidth: 10,
     },
     paragraph: {
         margin: 24,
@@ -14,4 +16,12 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#1565C0',
     },
-})
+    image: {
+        maxWidth: '100%',
+        width: '80%',
+        height: '15%',
+        margin: 10,
+    },
+}); 
+
+export default styles;
