@@ -2,12 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 // import Props from './src/ex_2';
-import Ativ_1 from './src/ativ1';
+// import Ativ_1 from './src/ativ1';
+import Exemplo_3 from './src/ex_3';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Ativ_1 />
+      <Exemplo_3 />
       <StatusBar style="auto" />
     </View>
   );
@@ -16,9 +18,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    // alignItems: 'center',
+    backgroundColor: 'red',
+    alignItems: 'center',
     justifyContent: 'center',
+    padding: 8,
   },
 });
 
