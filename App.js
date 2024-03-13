@@ -6,11 +6,10 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Exemplo_3 from './src/ex_3';
 import Ativ_3 from './src/ativ3';
 
-
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo_3 />
+      <Ativ_3 />
       <StatusBar style="auto" />
     </View>
   );
