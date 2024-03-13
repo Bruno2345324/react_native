@@ -14,7 +14,7 @@ export default function Exemplo_3 () {
     function incremento () {
         const inc = numero + 1;
         setNumero(inc);
-        // console.log(numero);
+        // console.log(numero); xxx
     };
 
     return(
