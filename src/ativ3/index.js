@@ -5,7 +5,7 @@ import styles from './styles';
 
 export default function Ativ_3 () {
 
-    const [numero, setNumero] = useState(3);
+    const [numero, setNumero] = useState(0);
 
     // function Ola (nome) {
     //     alert(`Olá ${nome}`);
@@ -37,16 +37,17 @@ export default function Ativ_3 () {
             {/* <text style={styles.titulo}>Valor: {numero}</text> */}
 
             <TouchableOpacity //Primeiro botão
-            style={styles.botao} 
+           
+           style={styles.botao1} 
             onPress={() => incremento()}>
                 
                 <Text style={styles.txtBotao}> + 1 </Text>
             </TouchableOpacity>
 
-            <text style={styles.titulo}>Resultado: {numero}</text>
+            <text style={styles.titulo}> {numero}</text>
 
             <TouchableOpacity //Segundo botão
-            style={styles.botao} 
+            style={styles.botao2} 
             onPress={() => decremento()}>
                 
                 <Text style={styles.txtBotao}> - 1 </Text>

@@ -14,11 +14,29 @@ const styles = StyleSheet.create({
         margin: 8,
         marginBottom: 20,
     },
-    botao: {
-        width: '70%',
+    botao1: {
+        width: '20%', //original 70%
         padding: 16,
         backgroundColor: '#000',
-        alignItems: 'center',
+        // alignItems: 'center', //original: center
+        marginLeft: '200px',
+        margin: 18,
+        borderRadius: 20,
+    },
+    botao2: {
+        width: '20%', //original 70%
+        padding: 16,
+        backgroundColor: '#000',
+        // alignItems: 'center', //original: center
+        marginRight: '200px',
+        margin: 18,
+        borderRadius: 20,
+    },
+    botao: {
+        // width: '70%', //original 70%
+        padding: 16,
+        backgroundColor: '#000',
+        alignItems: 'center', //original: center
         margin: 18,
         borderRadius: 20,
     },
