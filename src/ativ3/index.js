@@ -1,66 +1,57 @@
-import {useState} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import { useState } from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 
-export default function Ativ_3 () {
+export default function Ativ_3() {
 
     const [numero, setNumero] = useState(0);
 
-    // function Ola (nome) {
-    //     alert(`Olá ${nome}`);
-    // };
-
-    function incremento () {
+    function incremento() {
         const inc = numero + 1;
         setNumero(inc);
-        // console.log(numero); xxx
     };
 
-    function decremento () {
+    function decremento() {
         const inc = numero - 1;
         setNumero(inc);
-        // console.log(numero); xxx
     };
 
-    return(
+    return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Calculadora</Text>
 
-            {/* <TouchableOpacity //Primeiro botão
-            style={styles.botao} 
-            onPress={() => Ola('Bruno')}>
-                
-                <Text style={styles.txtBotao}> Botão </Text>
-            </TouchableOpacity> */}
-
-            {/* <text style={styles.titulo}>Valor: {numero}</text> */}
-
-            <TouchableOpacity //Primeiro botão
-           
-           style={styles.botao1} 
-            onPress={() => incremento()}>
-                
-                <Text style={styles.txtBotao}> + 1 </Text>
-            </TouchableOpacity>
-
-            <text style={styles.titulo}> {numero}</text>
-
-            <TouchableOpacity //Segundo botão
-            style={styles.botao2} 
-            onPress={() => decremento()}>
-                
-                <Text style={styles.txtBotao}> - 1 </Text>
-            </TouchableOpacity>
+            <View style={styles.containerGeral}> {/* //Criando container para aumentar todos os botôes no 
+                                                  limite do container, fzd uma margem e deixando eles do mesmo tamanho */}
 
             
-            <TouchableOpacity //terceiro botão
-            style={styles.botao} 
-            onPress={() => setNumero(0)}>
-                
-                <Text style={styles.txtBotao}> Zerar </Text>
-            </TouchableOpacity>
+                <View style={styles.botaoContainer}> {/* Criando um container para centralizar os botões + e - na mesma linha */}
+                    <TouchableOpacity //botão +
 
+                        style={styles.botao}
+                        onPress={() => incremento()}>
+
+                        <Text style={styles.txtBotao}> + 1 </Text>
+                    </TouchableOpacity>
+
+                    <text style={styles.titulo}> {numero}</text>
+
+                    <TouchableOpacity //botão -
+                        style={styles.botao}
+                        onPress={() => decremento()}>
+
+                        <Text style={styles.txtBotao}> - 1 </Text>
+                    </TouchableOpacity>
+                </View>
+
+
+                <TouchableOpacity //botão Zerar
+                    style={styles.botao}
+                    onPress={() => setNumero(0)}>
+
+                    <Text style={styles.txtBotao}> Zerar </Text>
+                </TouchableOpacity>
+            </View>
 
 
         </View>

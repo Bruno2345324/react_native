@@ -14,36 +14,22 @@ const styles = StyleSheet.create({
         margin: 8,
         marginBottom: 20,
     },
-    botao1: {
-        width: '20%', //original 70%
-        padding: 16,
-        backgroundColor: '#000',
-        // alignItems: 'center', //original: center
-        marginLeft: '200px',
-        margin: 18,
-        borderRadius: 20,
-    },
-    botao2: {
-        width: '20%', //original 70%
-        padding: 16,
-        backgroundColor: '#000',
-        // alignItems: 'center', //original: center
-        marginRight: '200px',
-        margin: 18,
-        borderRadius: 20,
-    },
     botao: {
-        // width: '70%', //original 70%
         padding: 16,
         backgroundColor: '#000',
-        alignItems: 'center', //original: center
+        alignItems: 'center',
         margin: 18,
         borderRadius: 20,
+        flex:1
     },
     txtBotao: {
         color: '#f5f5f5',
         fontSize: 20,
-    }
+    },
+    botaoContainer:{ //alinhando os itens do container em formato de linha
+        flexDirection: 'row',
+        alignItems: "center"
+    },
 });
 
 export default styles;
