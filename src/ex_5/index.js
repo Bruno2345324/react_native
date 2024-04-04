@@ -18,5 +18,13 @@ export default function Exemplo5 () {
         <Text style={styles.txtsaida} Calculadora basica ></Text>
 
         <Text style={styles.txtLabel1} primeiro numero ></Text>
+        <TextInput style={styles.txtEntrada} />
+
+        <Text style={styles.txtSaida}> + </Text>
+
+        <Text style={styles.txtLabel1}> segundo numero </Text>
+        <TextInput style={styles.txtEntrada} />
+
+        <Text style={[styles.txtSaida, {margin: 0}]}> = </Text>
     </View>
 }
