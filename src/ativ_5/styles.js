@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 10,
         marginTop: 20,
+        width: '20%'
     },
     textButton: {
         fontSize: 22,
@@ -47,6 +48,11 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#C51162',
     },
+    botoes:{
+        flexDirection: 'row',
+        width: '100%',
+        justifyContent: 'space-between',
+    }
 }); 
 
 export default styles;

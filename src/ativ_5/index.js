@@ -4,15 +4,21 @@ import { View, Text, TextInput, Pressable } from 'react-native';
 import styles from './styles';
 
 export default function Exemplo5() {
-    const [n1, setN1] = useState('0');
-    const [n2, setN2] = useState('0');
-    const [total, setTotal] = useState('0');
+    const [n1, setN1] = useState('');
+    const [n2, setN2] = useState('');
+    const [total, setTotal] = useState('');
 
     function Soma() {
         setTotal(parseInt(n1) + parseInt(n2));
     }
     function Sub() {
         setTotal(parseInt(n1) - parseInt(n2));
+    }
+    function Div() {
+        setTotal(parseInt(n1) / parseInt(n2));
+    }
+    function Mult() {
+        setTotal(parseInt(n1) * parseInt(n2));
     }
 
     return (
@@ -49,12 +55,33 @@ export default function Exemplo5() {
                     value={total.toString()}
                 />
 
+                <View style={styles.botoes}>
                 <Pressable style={styles.button} onPress={Soma}>
                     <Text style={styles.textButton}>+</Text>
                 </Pressable>
                 <Pressable style={styles.button} onPress={Sub}>
                     <Text style={styles.textButton}>-</Text>
                 </Pressable>
+                <Pressable style={styles.button} onPress={Mult}>
+                    <Text style={styles.textButton}>x</Text>
+                </Pressable>
+                <Pressable style={styles.button} onPress={Div}>
+                    <Text style={styles.textButton}>/</Text>
+                </Pressable>
+                </View>
+
+                <Pressable //terceiro botão
+                    style={[styles.button, {width: '100%'}]} 
+                    onPress={() => {
+                    setTotal('');
+                    setN1('');
+                    setN2('');
+                    }}
+                    >
+                
+                <Text style={styles.textButton}> Zerar </Text>
+                </Pressable>
+
             </View>
         </View>
     );

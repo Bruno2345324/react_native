@@ -8,7 +8,8 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Exemplo4 from './src/ex_4';
 // import Exemplo4 from './src/ex_4 Professor'; 
 // import Atividade4 from './src/ativ4';
-import Exemplo5 from './src/ex_5';
+// import Exemplo5 from './src/ativ_5';
+import Exemplo5 from './src/ativ5_Professor';
 
 export default function App() {
   return (
