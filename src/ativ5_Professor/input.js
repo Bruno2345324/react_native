@@ -1,14 +1,18 @@
-import {  } from 'react-native';
+import { useState } from 'react';
+import { TextInput } from 'react-native';
 
 import styles from './styles';
 
-export default function input({sinal, operacao}) {
+export default function Input({valor, alzValor, readOnly = false}) {
+
+    const [isFocus, setIsFocus] = useState(false);
+
     return (
         <TextInput
         style={
             [
                 styles.txtEntrada,
-                isFocusN1 ?
+                isFocus ?
                     {
                         borderColor: '#C51162',
                         outline: 'none',
@@ -17,10 +21,11 @@ export default function input({sinal, operacao}) {
                     {}
             ]
         }
-        onFocus={() => setIsFocusN1(true)}
-        onBlur={() => setIsFocusN1(false)}
-        onChangeText={(num1) => setN1(num1)}
-        value={n1}
+        onFocus={() => setIsFocus(true)}
+        onBlur={() => setIsFocus(false)}
+        onChangeText={(num1) => alzValor(num1)}
+        value={valor}
+        readOnly={readOnly}
         // keyboardType='numeric'
     />
 
